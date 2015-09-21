@@ -1,0 +1,30 @@
+
+
+//-----------------------------------------------------------------------------------------//
+//------------------ Prototypes & Critcal Components -----------------------------------//
+
+
+// Imports all base styles configuration 
+// giving preference to prototypes, which
+// should not produce any output [with the exception of static prototypes]
+
+
+@import 'common';
+
+//prototype
+
+@import 'prototype';
+@import 'static';
+
+
+//critical
+
+@import 'critical-blocks';
+@import 'critical-elements';
+@import 'critical-modifiers';
+
+
+//utilities/objects
+
+@import 'prototype-utility';
+@import 'critical-utility';

@@ -1,0 +1,22 @@
+{
+    "components": [],
+    "prototypes": [],
+    "build_dir": "app/build",
+    "dir": "app/build",
+    "template_dir": "../templates",
+    "prototype_dir": "../prototypes",
+    "component_dir": "../components",
+    "block_path": "_blocks.scss",
+    "element_path": "_elements.scss",
+    "modifier_path": "_modifiers.scss",
+    "font_path": "_fonts.scss",
+    "library_path": "library/_library.scss",
+    "utility_path": "utility/_utility.scss",
+    "config_path": "_config.scss",
+    "prototype_path": "_prototype.scss",
+    "critical_block_path": "critical/_blocks.scss",
+    "critical_element_path": "critical/_elements.scss",
+    "critical_modifier_path": "critical/_modifiers.scss",
+    "critical_utility_path": "critical/utility/_utility.scss",
+    "static_path": "static/_static.scss"
+}
