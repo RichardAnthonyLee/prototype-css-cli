@@ -1,14 +1,11 @@
 {
-  "name": "prototype.css",
-  "version": "0.0.0",
+  "name": "prototype-css",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "preferGlobal": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bin": {
-    "prototype.css": "index.js"
+    "prototype-css": "index.js"
   },
   "author": "Richard Lee",
   "license": "MIT",

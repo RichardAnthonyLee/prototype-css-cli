@@ -1,6 +1,6 @@
 module.exports = {	
 
-	configFile:  './prototype.css.json', 
+	configFile:  './prototype-css.json', 
 	config: {},
     init: function( dir ){
 

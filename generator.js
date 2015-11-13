@@ -53,6 +53,7 @@ module.exports = {
 
 		var config = this.config.config;
 
+		//pluralize the module type ( components or prototypes )
 		var type = module.type + "s";
 
 
@@ -135,7 +136,7 @@ module.exports = {
 
 		//create the directory
 
-		fs.mkdirSync( dir );
+		fs.mkdirpSync( dir );
 
 		//now recursitivly copy all files and diretories of the template dir
 		fs.copySync( tpl, dir );

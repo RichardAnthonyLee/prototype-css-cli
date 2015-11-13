@@ -13,7 +13,7 @@ var args       = process.argv.slice( 2 ),
 
 /***************************************************
 
-	----- Prototype.css -----
+	----- Prototype-css-cli -----
 
 	This script creates component and prototype
 	using configured templates, and updates 
