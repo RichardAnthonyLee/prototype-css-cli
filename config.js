@@ -6,7 +6,7 @@ module.exports = {
 
         this.load();
 
-        var dir = this.config.dir = ( dir ? (dir + '/') : '' ) + this.config.dir + "/";
+        var dir = ( dir ? (dir + '/') : '' ) + this.config.dir + "/";
 
         this.setComponents( this.config.components, dir + this.config.component_dir );
         this.setPrototypes( this.config.prototypes, dir + this.config.prototype_dir );

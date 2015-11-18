@@ -63,21 +63,15 @@ module.exports = {
 
 			if( module.name === config[ type ][i].name )
 			{
-				continue;
+				return false;
 			}
 
-			 //add module to config object
-			config[ type ].push( { name : module.name  } );
-
 		}
 
-		if( config[ type ].length === 0 )
-		{
 
-		    //add module to config object
-			config[ type ].push( { name : module.name  } );
+		//add module to config object
+		config[ type ].push( { name : module.name  } );
 
-		}
 
 		this.config.config = config;
 
@@ -105,10 +99,14 @@ module.exports = {
 	generateModule: function( module, confirm ){
 
 
+		//make sure module type is prototype or component
+
 		if( ['prototype', 'component'].indexOf( module.type ) === -1 )
 		{
 			throw new Error( "module type must be either prototype or component, '" + module.type + "' was given" );
 		}
+
+		//get all types
 
 		var modules = this.config[ module.type + 's' ];
 
@@ -133,6 +131,7 @@ module.exports = {
 		//build the path
 		var dir = this.config.getPath( module.name, module.type + "_dir" ),
 		    tpl = this.config.getPath( module.type, "template_dir" );
+
 
 		//create the directory
 
@@ -400,7 +399,7 @@ module.exports = {
 
 
 		var modules = this.config.getModulesWith( options.modules, options.module_path );
-
+		
 
 		var content = this.makeFile( options.tpl, {
 			imports  : modules,

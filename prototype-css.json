@@ -1,6 +1,22 @@
 {
     "components": [],
-    "prototypes": [],
+    "prototypes": [
+        {
+            "name": "example209"
+        },
+        {
+            "name": "example2099"
+        },
+        {
+            "name": "example20990"
+        },
+        {
+            "name": "example209902"
+        },
+        {
+            "name": "example2099022"
+        }
+    ],
     "build_dir": "test/build",
     "dir": "test/build",
     "template_dir": "../../templates",

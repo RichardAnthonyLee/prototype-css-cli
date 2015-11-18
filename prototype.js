@@ -132,38 +132,39 @@ module.exports = {
 			var prototype = this;
 
 			this.cli.prompt([
-					{
-						type:    'confirm',
-						name:    'config',
-						message: 'update config file?'
-					},
-					{
-						type:    'confirm',
-						name:    'build',
-						message: 'update build?'
-					}
-				], function( update ){
+				{
+					type:    'confirm',
+					name:    'config',
+					message: 'update config file?'
+				},
+				{
+					type:    'confirm',
+					name:    'build',
+					message: 'update build?'
+				}
+					
+			], function( update ){
 
-					//if config update, add new module to config file
-					if( update.config )
-					{
+				//if config update, add new module to config file
+				if( update.config )
+				{
 
-						prototype.gen.saveModule( module );
+					prototype.gen.saveModule( module );
 
-						console.log( module.type + " '" + module.name + "' saved to " + prototype.gen.config.configFile );
+					console.log( module.type + " '" + module.name + "' saved to " + prototype.gen.config.configFile );
 
-					}
+				}
 
-					//if update build, run the update command
-					if( update.build )
-					{
+				//if update build, run the update command
+				if( update.build )
+				{
 
-						prototype.update();
+					prototype.update();
 
-					}
+				}
 					
 
-				});
+			});
 
 		}
 
