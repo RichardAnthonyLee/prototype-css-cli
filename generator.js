@@ -24,7 +24,7 @@ module.exports = {
 			this.config.init( this.config.getRootDir() );
 
 			//get the path to the app template
-			var appTemplatePath = this.config.getPath("app", "template_dir"); 
+			var appTemplatePath = __dirname + "/templates/app"; 
 
 			//copy it's conents into current directory
 			this.config.fs.copySync( appTemplatePath, "." );	
@@ -272,7 +272,7 @@ module.exports = {
 			module_path :  'critical_element_path',
 			tpl         :  '_critical-elements',
 			dir         :  this.data().component_dir,
-			path        :  this.data().element_path,
+			path        :  this.data().critical_element_path,
 			filename    :  '_critical-elements.scss'  
 		});
 
